@@ -32,37 +32,37 @@ namespace Veterinario2021
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textDNI = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
+            this.textApellido = new System.Windows.Forms.TextBox();
+            this.textContraseña = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
+            this.textTeléfono = new System.Windows.Forms.TextBox();
+            this.textLocalidad = new System.Windows.Forms.TextBox();
+            this.textChip = new System.Windows.Forms.TextBox();
+            this.textNombreMascota = new System.Windows.Forms.TextBox();
+            this.textRaza = new System.Windows.Forms.TextBox();
+            this.textPropietario = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +77,6 @@ namespace Veterinario2021
             this.label1.TabIndex = 0;
             this.label1.Text = "USUARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -88,41 +87,17 @@ namespace Veterinario2021
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.LightGray;
             this.label2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 111);
+            this.label2.Location = new System.Drawing.Point(13, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "DNI";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(134, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 38);
-            this.label3.TabIndex = 3;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(134, 159);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(402, 40);
-            this.label4.TabIndex = 5;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -134,19 +109,6 @@ namespace Veterinario2021
             this.label5.TabIndex = 4;
             this.label5.Text = "Nombre";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(134, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(402, 40);
-            this.label6.TabIndex = 7;
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -158,18 +120,6 @@ namespace Veterinario2021
             this.label7.TabIndex = 6;
             this.label7.Text = "Apellidos";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(134, 261);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(402, 38);
-            this.label8.TabIndex = 9;
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -182,17 +132,6 @@ namespace Veterinario2021
             this.label9.Text = "Contraseña";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label10.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(134, 312);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(402, 40);
-            this.label10.TabIndex = 11;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.LightGray;
@@ -203,17 +142,6 @@ namespace Veterinario2021
             this.label11.TabIndex = 10;
             this.label11.Text = "Email";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(134, 364);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(402, 40);
-            this.label12.TabIndex = 13;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
@@ -226,17 +154,6 @@ namespace Veterinario2021
             this.label13.Text = "Teléfono";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label14.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(134, 419);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(237, 40);
-            this.label14.TabIndex = 15;
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label15
             // 
             this.label15.BackColor = System.Drawing.Color.LightGray;
@@ -247,7 +164,6 @@ namespace Veterinario2021
             this.label15.TabIndex = 14;
             this.label15.Text = "Loacalidad";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
             // 
@@ -296,26 +212,6 @@ namespace Veterinario2021
             this.label20.Size = new System.Drawing.Size(0, 15);
             this.label20.TabIndex = 20;
             // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label21.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(123, 561);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(148, 39);
-            this.label21.TabIndex = 21;
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label22.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(123, 614);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(148, 39);
-            this.label22.TabIndex = 25;
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -344,16 +240,6 @@ namespace Veterinario2021
             this.label25.Text = "Nombre";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label26.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(388, 614);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(148, 39);
-            this.label26.TabIndex = 31;
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label27
             // 
             this.label27.BackColor = System.Drawing.Color.LightGray;
@@ -362,18 +248,8 @@ namespace Veterinario2021
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(94, 38);
             this.label27.TabIndex = 30;
-            this.label27.Text = "Propietario";
+            this.label27.Text = "DNI propietario";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label28.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(388, 561);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(148, 39);
-            this.label28.TabIndex = 29;
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
             // 
@@ -402,15 +278,14 @@ namespace Veterinario2021
             this.label31.TabIndex = 26;
             this.label31.Text = "Raza";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Veterinario2021.Properties.Resources.pastor;
-            this.pictureBox2.Location = new System.Drawing.Point(388, 419);
+            this.pictureBox2.Image = global::Veterinario2021.Properties.Resources.iconoMascota1;
+            this.pictureBox2.Location = new System.Drawing.Point(388, 410);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(148, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.Size = new System.Drawing.Size(144, 145);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
             // 
@@ -424,46 +299,134 @@ namespace Veterinario2021
             this.button1.TabIndex = 33;
             this.button1.Text = "CREAR";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.crearUsuario_Click);
             // 
-            // Form1
+            // textDNI
             // 
-            this.ClientSize = new System.Drawing.Size(544, 741);
+            this.textDNI.Location = new System.Drawing.Point(134, 111);
+            this.textDNI.Multiline = true;
+            this.textDNI.Name = "textDNI";
+            this.textDNI.Size = new System.Drawing.Size(248, 38);
+            this.textDNI.TabIndex = 34;
+            // 
+            // textNombre
+            // 
+            this.textNombre.Location = new System.Drawing.Point(134, 161);
+            this.textNombre.Multiline = true;
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(398, 38);
+            this.textNombre.TabIndex = 35;
+            // 
+            // textApellido
+            // 
+            this.textApellido.Location = new System.Drawing.Point(134, 210);
+            this.textApellido.Multiline = true;
+            this.textApellido.Name = "textApellido";
+            this.textApellido.Size = new System.Drawing.Size(402, 38);
+            this.textApellido.TabIndex = 36;
+            // 
+            // textContraseña
+            // 
+            this.textContraseña.Location = new System.Drawing.Point(134, 263);
+            this.textContraseña.Multiline = true;
+            this.textContraseña.Name = "textContraseña";
+            this.textContraseña.Size = new System.Drawing.Size(398, 38);
+            this.textContraseña.TabIndex = 37;
+            // 
+            // textEmail
+            // 
+            this.textEmail.Location = new System.Drawing.Point(134, 312);
+            this.textEmail.Multiline = true;
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(398, 38);
+            this.textEmail.TabIndex = 38;
+            // 
+            // textTeléfono
+            // 
+            this.textTeléfono.Location = new System.Drawing.Point(134, 366);
+            this.textTeléfono.Multiline = true;
+            this.textTeléfono.Name = "textTeléfono";
+            this.textTeléfono.Size = new System.Drawing.Size(398, 38);
+            this.textTeléfono.TabIndex = 39;
+            // 
+            // textLocalidad
+            // 
+            this.textLocalidad.Location = new System.Drawing.Point(134, 421);
+            this.textLocalidad.Multiline = true;
+            this.textLocalidad.Name = "textLocalidad";
+            this.textLocalidad.Size = new System.Drawing.Size(248, 38);
+            this.textLocalidad.TabIndex = 40;
+            // 
+            // textChip
+            // 
+            this.textChip.Location = new System.Drawing.Point(112, 561);
+            this.textChip.Multiline = true;
+            this.textChip.Name = "textChip";
+            this.textChip.Size = new System.Drawing.Size(159, 38);
+            this.textChip.TabIndex = 41;
+            // 
+            // textNombreMascota
+            // 
+            this.textNombreMascota.Location = new System.Drawing.Point(112, 615);
+            this.textNombreMascota.Multiline = true;
+            this.textNombreMascota.Name = "textNombreMascota";
+            this.textNombreMascota.Size = new System.Drawing.Size(159, 38);
+            this.textNombreMascota.TabIndex = 42;
+            // 
+            // textRaza
+            // 
+            this.textRaza.Location = new System.Drawing.Point(377, 561);
+            this.textRaza.Multiline = true;
+            this.textRaza.Name = "textRaza";
+            this.textRaza.Size = new System.Drawing.Size(155, 38);
+            this.textRaza.TabIndex = 43;
+            // 
+            // textPropietario
+            // 
+            this.textPropietario.Location = new System.Drawing.Point(377, 615);
+            this.textPropietario.Multiline = true;
+            this.textPropietario.Name = "textPropietario";
+            this.textPropietario.Size = new System.Drawing.Size(155, 38);
+            this.textPropietario.TabIndex = 44;
+            // 
+            // FormGustavo
+            // 
+            this.ClientSize = new System.Drawing.Size(540, 736);
+            this.Controls.Add(this.textPropietario);
+            this.Controls.Add(this.textRaza);
+            this.Controls.Add(this.textNombreMascota);
+            this.Controls.Add(this.textChip);
+            this.Controls.Add(this.textLocalidad);
+            this.Controls.Add(this.textTeléfono);
+            this.Controls.Add(this.textEmail);
+            this.Controls.Add(this.textContraseña);
+            this.Controls.Add(this.textApellido);
+            this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.textDNI);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormGustavo";
             this.Text = "CREAR";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -474,6 +437,18 @@ namespace Veterinario2021
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textDNI;
+        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox textApellido;
+        private System.Windows.Forms.TextBox textContraseña;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.TextBox textTeléfono;
+        private System.Windows.Forms.TextBox textLocalidad;
+        private System.Windows.Forms.TextBox textChip;
+        private System.Windows.Forms.TextBox textNombreMascota;
+        private System.Windows.Forms.TextBox textRaza;
+        private System.Windows.Forms.TextBox textPropietario;
     }
 }
 
