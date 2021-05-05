@@ -53,7 +53,7 @@ namespace Veterinario2021
         }
         
         //empezamos a encryptar
-      
+        
 
         private void crearUsuario_Click(object sender, EventArgs e)
         {
@@ -66,15 +66,11 @@ namespace Veterinario2021
             Boolean resultado2 = miConexion.insertaMascota(textChip.Text,textNombreMascota.Text, textRaza.Text, textPropietario.Text);
 
          
-            if (resultado )
+            if (resultado)
             {
                 MessageBox.Show("Usuario creado");
             }
-            else
-            {
-                MessageBox.Show("Ha ocurrido un error inesperado, vuelve a intentarlo mas tarde porfavor");
-            }
-
+     
         }
     }
 }
