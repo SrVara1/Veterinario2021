@@ -15,6 +15,32 @@ namespace Veterinario2021
             conexion = new MySqlConnection("Server=127.0.0.1; Database=veterinario2021; Uid=root; Pwd=; Port=3306");
           
         }
+        public Boolean inicioSesion(string _DNI, string _Contraseña)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuario WHERE DNI= @_DNI AND Contraseña=@_Contraseña", conexion);
+                consulta.Parameters.AddWithValue("@_DNI", _DNI);
+                consulta.Parameters.AddWithValue("@_Contraseña", _Contraseña);
+
+                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado
+                if (resultado.Read())
+                {
+                    conexion.Close();
+                    //si entra aqui es porque si que esta bien el usuario y la contraseña
+                    return true;
+                }
+
+                conexion.Close();
+                return false;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+
+        }
 
         public Boolean insertaUsuarios(string _DNI, string _Nombre, string _Apellido, string _Contraseña, string _Email, string _Telefono, string _Localidad)
         {
