@@ -17,7 +17,7 @@ namespace Veterinario2021
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGustavo());
+            Application.Run(new FormJaime());
         }
     }
 }

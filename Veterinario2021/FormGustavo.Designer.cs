@@ -46,7 +46,6 @@ namespace Veterinario2021
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -62,7 +61,6 @@ namespace Veterinario2021
             this.textChip = new System.Windows.Forms.TextBox();
             this.textNombreMascota = new System.Windows.Forms.TextBox();
             this.textRaza = new System.Windows.Forms.TextBox();
-            this.textPropietario = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -240,17 +238,6 @@ namespace Veterinario2021
             this.label25.Text = "Nombre";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.LightGray;
-            this.label27.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(277, 615);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(94, 38);
-            this.label27.TabIndex = 30;
-            this.label27.Text = "DNI propietario";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -293,9 +280,9 @@ namespace Veterinario2021
             // 
             this.button1.BackColor = System.Drawing.Color.PaleGreen;
             this.button1.Font = new System.Drawing.Font("Tw Cen MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(123, 674);
+            this.button1.Location = new System.Drawing.Point(282, 615);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 55);
+            this.button1.Size = new System.Drawing.Size(248, 38);
             this.button1.TabIndex = 33;
             this.button1.Text = "CREAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -308,6 +295,7 @@ namespace Veterinario2021
             this.textDNI.Name = "textDNI";
             this.textDNI.Size = new System.Drawing.Size(248, 38);
             this.textDNI.TabIndex = 34;
+            this.textDNI.TextChanged += new System.EventHandler(this.textDNI_TextChanged);
             // 
             // textNombre
             // 
@@ -381,18 +369,9 @@ namespace Veterinario2021
             this.textRaza.Size = new System.Drawing.Size(155, 38);
             this.textRaza.TabIndex = 43;
             // 
-            // textPropietario
-            // 
-            this.textPropietario.Location = new System.Drawing.Point(377, 615);
-            this.textPropietario.Multiline = true;
-            this.textPropietario.Name = "textPropietario";
-            this.textPropietario.Size = new System.Drawing.Size(155, 38);
-            this.textPropietario.TabIndex = 44;
-            // 
             // FormGustavo
             // 
-            this.ClientSize = new System.Drawing.Size(540, 736);
-            this.Controls.Add(this.textPropietario);
+            this.ClientSize = new System.Drawing.Size(542, 736);
             this.Controls.Add(this.textRaza);
             this.Controls.Add(this.textNombreMascota);
             this.Controls.Add(this.textChip);
@@ -405,7 +384,6 @@ namespace Veterinario2021
             this.Controls.Add(this.textDNI);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label27);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label31);
@@ -448,7 +426,6 @@ namespace Veterinario2021
         private System.Windows.Forms.TextBox textChip;
         private System.Windows.Forms.TextBox textNombreMascota;
         private System.Windows.Forms.TextBox textRaza;
-        private System.Windows.Forms.TextBox textPropietario;
     }
 }
 
