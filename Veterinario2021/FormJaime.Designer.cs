@@ -30,37 +30,39 @@ namespace Veterinario2021
         private void InitializeComponent()
         {
             this.Usuario = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.CreaUsuario = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.IniciaSesion = new System.Windows.Forms.Button();
             this.texto = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Usuario
             // 
-            this.Usuario.Location = new System.Drawing.Point(164, 225);
+            this.Usuario.Location = new System.Drawing.Point(273, 225);
             this.Usuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Usuario.Multiline = true;
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(339, 39);
+            this.Usuario.Size = new System.Drawing.Size(230, 39);
             this.Usuario.TabIndex = 2;
             this.Usuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 287);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(339, 37);
-            this.textBox2.TabIndex = 3;
+            this.password.Location = new System.Drawing.Point(273, 289);
+            this.password.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.password.Multiline = true;
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(230, 37);
+            this.password.TabIndex = 3;
             // 
             // CreaUsuario
             // 
             this.CreaUsuario.BackColor = System.Drawing.Color.White;
-            this.CreaUsuario.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CreaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CreaUsuario.Location = new System.Drawing.Point(354, 399);
             this.CreaUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CreaUsuario.Name = "CreaUsuario";
@@ -84,7 +86,7 @@ namespace Veterinario2021
             // IniciaSesion
             // 
             this.IniciaSesion.BackColor = System.Drawing.Color.DodgerBlue;
-            this.IniciaSesion.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IniciaSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IniciaSesion.ForeColor = System.Drawing.Color.White;
             this.IniciaSesion.Location = new System.Drawing.Point(163, 349);
             this.IniciaSesion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -108,17 +110,40 @@ namespace Veterinario2021
             this.texto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.texto.Click += new System.EventHandler(this.texto_Click);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(128, 225);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 39);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "DNI";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(128, 289);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 39);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Contraseña";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormJaime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Veterinario2021.Properties.Resources.patas;
             this.ClientSize = new System.Drawing.Size(677, 487);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.texto);
             this.Controls.Add(this.IniciaSesion);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CreaUsuario);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.Usuario);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormJaime";
@@ -131,11 +156,13 @@ namespace Veterinario2021
 
         #endregion
         private System.Windows.Forms.TextBox Usuario;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button CreaUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button IniciaSesion;
         private System.Windows.Forms.Label texto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

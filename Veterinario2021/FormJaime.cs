@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Veterinario2021
 {
+
     public partial class FormJaime : Form
     {
+        Conexion miConexion = new Conexion();
         public FormJaime()
         {
             InitializeComponent();
@@ -34,8 +36,22 @@ namespace Veterinario2021
         }
 
         private void IniciaSesion_Click(object sender, EventArgs e)
-        { 
-            
+        {
+            String DNI = Usuario.Text;
+            String Contraseña = password.Text;
+            if (miConexion.inicioSesion(DNI, Contraseña)) {
+                this.Hide();
+                formdavid ventana = new formdavid();
+                ventana.Show();
+            }
+            else {
+                MessageBox.Show("El usuario o la contraseña son incorrectos");
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
