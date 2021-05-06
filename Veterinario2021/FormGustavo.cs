@@ -30,7 +30,6 @@ namespace Veterinario2021
         private Label label23;
         private Label label24;
         private Label label25;
-        private Label label27;
         private Label label29;
         private Label label30;
         private Label label31;
@@ -63,7 +62,7 @@ namespace Veterinario2021
             Conexion miConexion = new Conexion();
            
             Boolean resultado = miConexion.insertaUsuarios(textDNI.Text, textNombre.Text, textApellido.Text, passHasheada, textEmail.Text, textTeléfono.Text, textLocalidad.Text);
-            Boolean resultado2 = miConexion.insertaMascota(textChip.Text,textNombreMascota.Text, textRaza.Text, textPropietario.Text);
+            Boolean resultado2 = miConexion.insertaMascota(textChip.Text,textNombreMascota.Text, textRaza.Text, textDNI.Text);
 
          
             if (resultado)
@@ -71,6 +70,11 @@ namespace Veterinario2021
                 MessageBox.Show("Usuario creado");
             }
      
+        }
+
+        private void textDNI_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
