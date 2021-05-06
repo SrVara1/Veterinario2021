@@ -20,7 +20,7 @@ namespace Veterinario2021
             try
             {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuario WHERE DNI= @_DNI AND Contraseña=@_Contraseña", conexion);
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuarios WHERE DNI= @_DNI AND Contraseña= @_Contraseña", conexion);
                 consulta.Parameters.AddWithValue("@_DNI", _DNI);
                 consulta.Parameters.AddWithValue("@_Contraseña", _Contraseña);
 
@@ -29,6 +29,7 @@ namespace Veterinario2021
                 {
                     conexion.Close();
                     //si entra aqui es porque si que esta bien el usuario y la contraseña
+
                     return true;
                 }
 
