@@ -74,6 +74,7 @@ namespace Veterinario2021
         }
 
         private void textDNI_TextChanged(object sender, EventArgs e)
+
         {
 
         }
