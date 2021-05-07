@@ -50,6 +50,7 @@ namespace Veterinario2021
         {
 
         }
+
         
         //empezamos a encryptar
         
@@ -75,6 +76,13 @@ namespace Veterinario2021
         private void textDNI_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormJaime ventana = new FormJaime();
+            ventana.Show();
         }
     }
 }
