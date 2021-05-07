@@ -31,6 +31,7 @@ namespace Veterinario2021
 
         private void CreaUsuario_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormGustavo ventana = new FormGustavo();
             ventana.Show();
         }

@@ -61,6 +61,7 @@ namespace Veterinario2021
             this.textChip = new System.Windows.Forms.TextBox();
             this.textNombreMascota = new System.Windows.Forms.TextBox();
             this.textRaza = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -69,9 +70,9 @@ namespace Veterinario2021
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label1.Font = new System.Drawing.Font("Tw Cen MT", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Location = new System.Drawing.Point(134, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 65);
+            this.label1.Size = new System.Drawing.Size(237, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "USUARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -369,9 +370,21 @@ namespace Veterinario2021
             this.textRaza.Size = new System.Drawing.Size(155, 38);
             this.textRaza.TabIndex = 43;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(13, 42);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 45);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormGustavo
             // 
             this.ClientSize = new System.Drawing.Size(542, 736);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textRaza);
             this.Controls.Add(this.textNombreMascota);
             this.Controls.Add(this.textChip);
@@ -426,6 +439,7 @@ namespace Veterinario2021
         private System.Windows.Forms.TextBox textChip;
         private System.Windows.Forms.TextBox textNombreMascota;
         private System.Windows.Forms.TextBox textRaza;
+        private System.Windows.Forms.Button button2;
     }
 }
 
