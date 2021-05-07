@@ -207,6 +207,7 @@ namespace Veterinario2021
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(160, 34);
             this.label19.TabIndex = 5;
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label20
             // 
