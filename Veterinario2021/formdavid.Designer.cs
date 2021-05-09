@@ -42,23 +42,31 @@ namespace Veterinario2021
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -79,7 +87,7 @@ namespace Veterinario2021
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1204, 733);
+            this.tabPage3.Size = new System.Drawing.Size(1204, 877);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "HOME";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
@@ -141,13 +149,14 @@ namespace Veterinario2021
             // 
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.label1);
             this.tabPage4.Controls.Add(this.button1);
             this.tabPage4.Controls.Add(this.monthCalendar1);
             this.tabPage4.Controls.Add(this.label34);
-            this.tabPage4.Controls.Add(this.label30);
-            this.tabPage4.Controls.Add(this.label21);
             this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.label17);
@@ -172,18 +181,18 @@ namespace Veterinario2021
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(95, 177);
+            this.label17.Location = new System.Drawing.Point(165, 182);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 34);
             this.label17.TabIndex = 2;
-            this.label17.Text = "Nombre";
+            this.label17.Text = "DNI";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(95, 295);
+            this.label16.Location = new System.Drawing.Point(95, 257);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(223, 34);
             this.label16.TabIndex = 3;
@@ -192,55 +201,27 @@ namespace Veterinario2021
             // 
             // label18
             // 
+            this.label18.BackColor = System.Drawing.Color.YellowGreen;
             this.label18.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(95, 437);
+            this.label18.Location = new System.Drawing.Point(944, 135);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(179, 38);
             this.label18.TabIndex = 4;
-            this.label18.Text = "Fecha deseada";
+            this.label18.Text = "Calendario";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(391, 177);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(160, 34);
-            this.label19.TabIndex = 5;
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label20
             // 
             this.label20.BackColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(557, 177);
+            this.label20.Location = new System.Drawing.Point(391, 182);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(257, 34);
             this.label20.TabIndex = 6;
             // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(391, 216);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(80, 19);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Nombre";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(568, 216);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(80, 19);
-            this.label30.TabIndex = 7;
-            this.label30.Text = "Apellidos";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label34
             // 
             this.label34.BackColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(391, 295);
+            this.label34.Location = new System.Drawing.Point(391, 257);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(257, 34);
             this.label34.TabIndex = 8;
@@ -249,7 +230,7 @@ namespace Veterinario2021
             // 
             this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.monthCalendar1.ForeColor = System.Drawing.Color.Black;
-            this.monthCalendar1.Location = new System.Drawing.Point(391, 437);
+            this.monthCalendar1.Location = new System.Drawing.Point(902, 182);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 9;
             // 
@@ -263,6 +244,119 @@ namespace Veterinario2021
             this.button1.TabIndex = 10;
             this.button1.Text = "REALIZAR CITA";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(164, 330);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 34);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Chip";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(391, 330);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(257, 34);
+            this.label2.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(105, 440);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 38);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Problema del animal";
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(391, 444);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(331, 186);
+            this.label4.TabIndex = 10;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.comboBox2);
+            this.tabPage1.Controls.Add(this.comboBox3);
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1204, 877);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "QUIENES SOMOS?";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(40, 275);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(504, 161);
+            this.label5.TabIndex = 0;
+            this.label5.Text = resources.GetString("label5.Text");
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            " Ofrecer un servicio de alta calidad a los veterinarios de atención primaria y a " +
+                "los ciudadanos, basado en el rigor científico, la formación y actualización",
+            "permanente, la ética y el respeto."});
+            this.comboBox1.Location = new System.Drawing.Point(162, 478);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(183, 36);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "Nuestra Mision";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "· Trabajo en equipo",
+            "",
+            "· Honestidad y ética de trabajo",
+            "",
+            "· Formación continua y de vanguardia",
+            "",
+            "· Transparencia e información constante, veraz y clara.",
+            "",
+            "· Trato excelente con el paciente y su familia.",
+            "",
+            "· Utilizar los medios y técnicas de vanguardia"});
+            this.comboBox2.Location = new System.Drawing.Point(821, 478);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(183, 36);
+            this.comboBox2.TabIndex = 2;
+            this.comboBox2.Text = "Nuestros Valores";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "· Ser reconocidos como un Hospital de Referencia de Vanguardia",
+            " a nivel Nacional e Internacional, basados",
+            " en el rigor científico y en el respeto por la profesión veterinaria."});
+            this.comboBox3.Location = new System.Drawing.Point(498, 478);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(183, 36);
+            this.comboBox3.TabIndex = 2;
+            this.comboBox3.Text = "Nuestra Vision";
             // 
             // formdavid
             // 
@@ -278,6 +372,7 @@ namespace Veterinario2021
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -296,13 +391,19 @@ namespace Veterinario2021
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
