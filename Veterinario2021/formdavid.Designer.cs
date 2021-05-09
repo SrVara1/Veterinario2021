@@ -29,35 +29,45 @@ namespace Veterinario2021
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formdavid));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +77,8 @@ namespace Veterinario2021
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -77,13 +89,20 @@ namespace Veterinario2021
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage3.Controls.Add(this.label33);
-            this.tabPage3.Controls.Add(this.label32);
+            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.pictureBox2);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.pictureBox1);
+            this.tabPage3.Controls.Add(this.label32);
             this.tabPage3.Controls.Add(this.label31);
-            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.ForeColor = System.Drawing.Color.Blue;
+            this.tabPage3.ImageIndex = 2;
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -92,58 +111,122 @@ namespace Veterinario2021
             this.tabPage3.Text = "HOME";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // label33
+            // button2
             // 
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label33.ForeColor = System.Drawing.Color.Blue;
-            this.label33.Location = new System.Drawing.Point(215, 544);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(348, 61);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "+34 616 89 24 56";
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(69, 505);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(381, 120);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "CERRAR SESIÓN";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(585, 344);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(474, 281);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(735, 268);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(162, 52);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Horario";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(696, 209);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(363, 38);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Alberto Arenas 2869, La Serena";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(566, 209);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(124, 38);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Dirección";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(696, 153);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(228, 38);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "+34 616 89 24 56";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(566, 153);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 38);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Telefóno";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(41, 153);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(453, 311);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // label32
             // 
-            this.label32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label32.Font = new System.Drawing.Font("Tw Cen MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(95, 668);
+            this.label32.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(154, 81);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(756, 41);
+            this.label32.Size = new System.Drawing.Size(249, 55);
             this.label32.TabIndex = 3;
-            this.label32.Text = "Clle 18 #127 -115 C. Cial Cañasgordas Mall Santiago de Cali Local N° 11, Madrid";
+            this.label32.Text = "Localizanos";
             this.label32.Click += new System.EventHandler(this.label32_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(21, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(458, 271);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label31
             // 
-            this.label31.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label31.Location = new System.Drawing.Point(232, 445);
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(656, 81);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(318, 114);
+            this.label31.Size = new System.Drawing.Size(331, 55);
             this.label31.TabIndex = 1;
             this.label31.Text = "CONTACTANOS";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-4, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1208, 737);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // tabPage4
             // 
@@ -161,6 +244,7 @@ namespace Veterinario2021
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.ImageIndex = 0;
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -169,81 +253,31 @@ namespace Veterinario2021
             this.tabPage4.Text = "CITAS";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // label4
             // 
-            this.label15.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(165, 37);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(153, 63);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "CITAS";
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(391, 444);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(331, 186);
+            this.label4.TabIndex = 10;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label17
+            // label3
             // 
-            this.label17.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(165, 182);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 34);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "DNI";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label17.Click += new System.EventHandler(this.label17_Click);
+            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(105, 440);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 38);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Problema del animal";
             // 
-            // label16
+            // label2
             // 
-            this.label16.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(95, 257);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(223, 34);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Número de Telefóno";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.YellowGreen;
-            this.label18.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(944, 135);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(179, 38);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Calendario";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(391, 182);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(257, 34);
-            this.label20.TabIndex = 6;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(391, 257);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(257, 34);
-            this.label34.TabIndex = 8;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.monthCalendar1.ForeColor = System.Drawing.Color.Black;
-            this.monthCalendar1.Location = new System.Drawing.Point(902, 182);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 9;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(323, 748);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(569, 86);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "REALIZAR CITA";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(391, 330);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(257, 34);
+            this.label2.TabIndex = 9;
             // 
             // label1
             // 
@@ -256,40 +290,92 @@ namespace Veterinario2021
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // button1
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(391, 330);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 34);
-            this.label2.TabIndex = 9;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(323, 748);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(569, 86);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "REALIZAR CITA";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // monthCalendar1
             // 
-            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(105, 440);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 38);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Problema del animal";
+            this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.monthCalendar1.ForeColor = System.Drawing.Color.Black;
+            this.monthCalendar1.Location = new System.Drawing.Point(902, 182);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 9;
             // 
-            // label4
+            // label34
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(391, 444);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(331, 186);
-            this.label4.TabIndex = 10;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label34.BackColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(391, 257);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(257, 34);
+            this.label34.TabIndex = 8;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(391, 182);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(257, 34);
+            this.label20.TabIndex = 6;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.YellowGreen;
+            this.label18.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(902, 135);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(256, 38);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Fecha deseada";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(95, 257);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(223, 34);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Número de Telefóno";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(165, 182);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(92, 34);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "DNI";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(165, 37);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(153, 63);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "CITAS";
             // 
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage1.Controls.Add(this.comboBox2);
-            this.tabPage1.Controls.Add(this.comboBox3);
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.ImageIndex = 3;
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -308,55 +394,77 @@ namespace Veterinario2021
             this.label5.Text = resources.GetString("label5.Text");
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // imageList1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            " Ofrecer un servicio de alta calidad a los veterinarios de atención primaria y a " +
-                "los ciudadanos, basado en el rigor científico, la formación y actualización",
-            "permanente, la ética y el respeto."});
-            this.comboBox1.Location = new System.Drawing.Point(162, 478);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 36);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Nuestra Mision";
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icons8_calendar_32px.png");
+            this.imageList1.Images.SetKeyName(1, "icons8_find_and_replace_80px.png");
+            this.imageList1.Images.SetKeyName(2, "icons8_home_40px_2.png");
+            this.imageList1.Images.SetKeyName(3, "icons8_who_50px.png");
             // 
-            // comboBox2
+            // tabPage2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "· Trabajo en equipo",
-            "",
-            "· Honestidad y ética de trabajo",
-            "",
-            "· Formación continua y de vanguardia",
-            "",
-            "· Transparencia e información constante, veraz y clara.",
-            "",
-            "· Trato excelente con el paciente y su familia.",
-            "",
-            "· Utilizar los medios y técnicas de vanguardia"});
-            this.comboBox2.Location = new System.Drawing.Point(821, 478);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 36);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.Text = "Nuestros Valores";
+            this.tabPage2.ImageIndex = 1;
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1204, 877);
+            this.tabPage2.TabIndex = 5;
+            this.tabPage2.Text = "BUSCADOR";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // label11
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "· Ser reconocidos como un Hospital de Referencia de Vanguardia",
-            " a nivel Nacional e Internacional, basados",
-            " en el rigor científico y en el respeto por la profesión veterinaria."});
-            this.comboBox3.Location = new System.Drawing.Point(498, 478);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(183, 36);
-            this.comboBox3.TabIndex = 2;
-            this.comboBox3.Text = "Nuestra Vision";
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Tw Cen MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(99, 561);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(445, 119);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "· Ofrecer un servicio de alta calidad a los veterinarios de atención primaria y a" +
+    " los ciudadanos, basado en el rigor científico, la formación y actualización";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label12.Location = new System.Drawing.Point(623, 561);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(445, 119);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "· Ser reconocidos como un Hospital de Referencia de Vanguardia a nivel Nacional e" +
+    " Internacional, basados en el rigor científico y en el respeto por la profesión " +
+    "veterinaria.";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label13.Location = new System.Drawing.Point(163, 494);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(306, 57);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "NUESTRA MISIÓN";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label14.Location = new System.Drawing.Point(691, 494);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(306, 57);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "NUESTRAS VISIÓN";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // formdavid
             // 
@@ -370,7 +478,8 @@ namespace Veterinario2021
             this.Text = "Formdavid";
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -381,11 +490,6 @@ namespace Veterinario2021
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
@@ -400,10 +504,23 @@ namespace Veterinario2021
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 
