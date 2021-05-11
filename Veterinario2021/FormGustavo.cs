@@ -70,6 +70,10 @@ namespace Veterinario2021
             {
                 MessageBox.Show("Usuario creado");
             }
+            else
+            {
+                MessageBox.Show("ERROR");
+            }
      
         }
 
