@@ -66,7 +66,7 @@ namespace Veterinario2021
             Boolean resultado2 = miConexion.insertaMascota(textChip.Text,textNombreMascota.Text, textRaza.Text, textDNI.Text);
 
          
-            if (resultado)
+            if (resultado)  
             {
                 MessageBox.Show("Usuario creado");
             }
