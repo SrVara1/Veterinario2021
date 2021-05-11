@@ -303,7 +303,7 @@ namespace Veterinario2021
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 34);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Chip";
+            this.label1.Text = "Edad";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -341,11 +341,11 @@ namespace Veterinario2021
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(95, 257);
+            this.label16.Location = new System.Drawing.Point(142, 257);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(223, 34);
+            this.label16.Size = new System.Drawing.Size(138, 34);
             this.label16.TabIndex = 3;
-            this.label16.Text = "Número de Teléfono";
+            this.label16.Text = "Sexo";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
@@ -355,7 +355,7 @@ namespace Veterinario2021
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 34);
             this.label17.TabIndex = 2;
-            this.label17.Text = "DNI";
+            this.label17.Text = "Especie";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
