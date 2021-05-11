@@ -12,6 +12,7 @@ namespace Veterinario2021
 {
     public partial class formdavid : Form
     {
+        Conexion miConexion = new Conexion();
         public formdavid()
         {
             InitializeComponent();
@@ -54,7 +55,29 @@ namespace Veterinario2021
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            FormJaime ventana = new
+        FormJaime();
+            ventana.Show();
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Conexion miConexion = new Conexion();
+            Boolean resultado = miConexion.insertaCita(DNI.Text, Telefono.Text, Chip.Text, ProblemaMascota.Text, Calendario.Text);
+            if (resultado)
+            {
+                MessageBox.Show("Insertado Corecctamente");
+            }
+            else
+            {
+                MessageBox.Show("Ha ocurrido un error inesperado, vuelve a intentarlo mas tarde");
+            }
         }
     }
 }
