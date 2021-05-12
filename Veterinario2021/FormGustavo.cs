@@ -57,24 +57,29 @@ namespace Veterinario2021
 
         private void crearUsuario_Click(object sender, EventArgs e)
         {
-            String passHasheada = BCrypt.Net.BCrypt.HashPassword(textContraseña.Text, BCrypt.Net.BCrypt.GenerateSalt());
-            //MessageBox.Show(textContraseña.Text + " " + passHasheada);
+            if (textDNI.Text.Length > 0 && textNombre.Text.Length > 0 && textApellido.Text.Length > 0 && textContraseña.Text.Length > 0 && textEmail.Text.Length > 0 && textTeléfono.Text.Length > 0 && textLocalidad.Text.Length > 0 && textChip.Text.Length > 0 && textNombreMascota.Text.Length > 0 && textRaza.Text.Length > 0 && textDNI.Text.Length > 0) {
+                String passHasheada = BCrypt.Net.BCrypt.HashPassword(textContraseña.Text, BCrypt.Net.BCrypt.GenerateSalt());
+                //MessageBox.Show(textContraseña.Text + " " + passHasheada);
 
-            Conexion miConexion = new Conexion();
-           
-            Boolean resultado = miConexion.insertaUsuarios(textDNI.Text, textNombre.Text, textApellido.Text, passHasheada, textEmail.Text, textTeléfono.Text, textLocalidad.Text);
-            Boolean resultado2 = miConexion.insertaMascota(textChip.Text,textNombreMascota.Text, textRaza.Text, textDNI.Text);
+                Conexion miConexion = new Conexion();
 
-         
-            if (resultado)  
-            {
-                MessageBox.Show("Usuario creado");
+                Boolean resultado = miConexion.insertaUsuarios(textDNI.Text, textNombre.Text, textApellido.Text, passHasheada, textEmail.Text, textTeléfono.Text, textLocalidad.Text);
+                Boolean resultado2 = miConexion.insertaMascota(textChip.Text, textNombreMascota.Text, textRaza.Text, textDNI.Text);
+
+
+                if (resultado && resultado2)
+                {
+                    MessageBox.Show("Usuario creado");
+                }
+                else
+                {
+                    MessageBox.Show("ERROR AL CREAR EL USUARIO");
+                }
             }
             else
             {
                 MessageBox.Show("ERROR");
             }
-     
         }
 
         private void textDNI_TextChanged(object sender, EventArgs e)
