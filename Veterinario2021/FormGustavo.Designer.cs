@@ -296,6 +296,7 @@ namespace Veterinario2021
             this.textDNI.Name = "textDNI";
             this.textDNI.Size = new System.Drawing.Size(248, 38);
             this.textDNI.TabIndex = 34;
+            this.textDNI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textDNI.TextChanged += new System.EventHandler(this.textDNI_TextChanged);
             // 
             // textNombre
@@ -305,6 +306,7 @@ namespace Veterinario2021
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(398, 38);
             this.textNombre.TabIndex = 35;
+            this.textNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textApellido
             // 
@@ -313,6 +315,7 @@ namespace Veterinario2021
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(402, 38);
             this.textApellido.TabIndex = 36;
+            this.textApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textContraseña
             // 
@@ -321,6 +324,7 @@ namespace Veterinario2021
             this.textContraseña.Name = "textContraseña";
             this.textContraseña.Size = new System.Drawing.Size(398, 38);
             this.textContraseña.TabIndex = 37;
+            this.textContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textEmail
             // 
@@ -329,6 +333,7 @@ namespace Veterinario2021
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(398, 38);
             this.textEmail.TabIndex = 38;
+            this.textEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textTeléfono
             // 
@@ -337,6 +342,7 @@ namespace Veterinario2021
             this.textTeléfono.Name = "textTeléfono";
             this.textTeléfono.Size = new System.Drawing.Size(398, 38);
             this.textTeléfono.TabIndex = 39;
+            this.textTeléfono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textLocalidad
             // 
@@ -345,6 +351,7 @@ namespace Veterinario2021
             this.textLocalidad.Name = "textLocalidad";
             this.textLocalidad.Size = new System.Drawing.Size(248, 38);
             this.textLocalidad.TabIndex = 40;
+            this.textLocalidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textChip
             // 
@@ -353,6 +360,7 @@ namespace Veterinario2021
             this.textChip.Name = "textChip";
             this.textChip.Size = new System.Drawing.Size(159, 38);
             this.textChip.TabIndex = 41;
+            this.textChip.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textNombreMascota
             // 
@@ -361,6 +369,7 @@ namespace Veterinario2021
             this.textNombreMascota.Name = "textNombreMascota";
             this.textNombreMascota.Size = new System.Drawing.Size(159, 38);
             this.textNombreMascota.TabIndex = 42;
+            this.textNombreMascota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textRaza
             // 
@@ -369,6 +378,7 @@ namespace Veterinario2021
             this.textRaza.Name = "textRaza";
             this.textRaza.Size = new System.Drawing.Size(155, 38);
             this.textRaza.TabIndex = 43;
+            this.textRaza.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 

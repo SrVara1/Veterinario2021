@@ -113,7 +113,7 @@ namespace Veterinario2021
             try
             {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("INSERT INTO mascotas(Especie,Sexo,Edad,ProblemaMascota,Calendario)  VALUES (@_Especie,@_Sexo,@_Edad,@_ProblemaMascota,@Calendario)", conexion);
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO citas (Especie,Sexo,Edad,ProblemaMascota,Calendario)  VALUES (@_Especie,@_Sexo,@_Edad,@_ProblemaMascota,@Calendario)", conexion);
                 consulta.Parameters.AddWithValue("@_Especie", _Especie);
                 consulta.Parameters.AddWithValue("@_Sexo", _Sexo);
                 consulta.Parameters.AddWithValue("@_Edad", _Edad);
