@@ -44,15 +44,13 @@ namespace Veterinario2021
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.Chip = new System.Windows.Forms.TextBox();
+            this.Edad = new System.Windows.Forms.TextBox();
             this.ProblemaMascota = new System.Windows.Forms.TextBox();
-            this.Telefono = new System.Windows.Forms.TextBox();
-            this.DNI = new System.Windows.Forms.TextBox();
+            this.Sexo = new System.Windows.Forms.TextBox();
+            this.Especie = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.Calendario = new System.Windows.Forms.MonthCalendar();
-            this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -64,6 +62,7 @@ namespace Veterinario2021
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.Calendario = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -233,15 +232,14 @@ namespace Veterinario2021
             // 
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage4.Controls.Add(this.Chip);
+            this.tabPage4.Controls.Add(this.Calendario);
+            this.tabPage4.Controls.Add(this.Edad);
             this.tabPage4.Controls.Add(this.ProblemaMascota);
-            this.tabPage4.Controls.Add(this.Telefono);
-            this.tabPage4.Controls.Add(this.DNI);
+            this.tabPage4.Controls.Add(this.Sexo);
+            this.tabPage4.Controls.Add(this.Especie);
             this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Controls.Add(this.label1);
             this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.Calendario);
-            this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label15);
@@ -254,13 +252,13 @@ namespace Veterinario2021
             this.tabPage4.Text = "CITAS";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // Chip
+            // Edad
             // 
-            this.Chip.Location = new System.Drawing.Point(391, 332);
-            this.Chip.Multiline = true;
-            this.Chip.Name = "Chip";
-            this.Chip.Size = new System.Drawing.Size(257, 34);
-            this.Chip.TabIndex = 17;
+            this.Edad.Location = new System.Drawing.Point(391, 332);
+            this.Edad.Multiline = true;
+            this.Edad.Name = "Edad";
+            this.Edad.Size = new System.Drawing.Size(257, 34);
+            this.Edad.TabIndex = 17;
             // 
             // ProblemaMascota
             // 
@@ -270,22 +268,22 @@ namespace Veterinario2021
             this.ProblemaMascota.Size = new System.Drawing.Size(332, 191);
             this.ProblemaMascota.TabIndex = 16;
             // 
-            // Telefono
+            // Sexo
             // 
-            this.Telefono.Location = new System.Drawing.Point(391, 257);
-            this.Telefono.Multiline = true;
-            this.Telefono.Name = "Telefono";
-            this.Telefono.Size = new System.Drawing.Size(257, 34);
-            this.Telefono.TabIndex = 14;
+            this.Sexo.Location = new System.Drawing.Point(391, 257);
+            this.Sexo.Multiline = true;
+            this.Sexo.Name = "Sexo";
+            this.Sexo.Size = new System.Drawing.Size(257, 34);
+            this.Sexo.TabIndex = 14;
             // 
-            // DNI
+            // Especie
             // 
-            this.DNI.Location = new System.Drawing.Point(391, 182);
-            this.DNI.Multiline = true;
-            this.DNI.Name = "DNI";
-            this.DNI.Size = new System.Drawing.Size(257, 34);
-            this.DNI.TabIndex = 13;
-            this.DNI.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Especie.Location = new System.Drawing.Point(391, 182);
+            this.Especie.Multiline = true;
+            this.Especie.Name = "Especie";
+            this.Especie.Size = new System.Drawing.Size(257, 34);
+            this.Especie.TabIndex = 13;
+            this.Especie.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -318,25 +316,6 @@ namespace Veterinario2021
             this.button1.Text = "REALIZAR CITA";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Calendario
-            // 
-            this.Calendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Calendario.ForeColor = System.Drawing.Color.Black;
-            this.Calendario.Location = new System.Drawing.Point(902, 182);
-            this.Calendario.Name = "Calendario";
-            this.Calendario.TabIndex = 9;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.YellowGreen;
-            this.label18.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(902, 135);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(256, 38);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Fecha deseada";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
             // 
@@ -469,6 +448,22 @@ namespace Veterinario2021
             this.imageList1.Images.SetKeyName(2, "icons8_home_40px_2.png");
             this.imageList1.Images.SetKeyName(3, "icons8_who_50px.png");
             // 
+            // Calendario
+            // 
+            this.Calendario.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Calendario.FormattingEnabled = true;
+            this.Calendario.Items.AddRange(new object[] {
+            "28/05/2021",
+            "",
+            "09/06/2021",
+            "",
+            "14/06/2021"});
+            this.Calendario.Location = new System.Drawing.Point(852, 182);
+            this.Calendario.Name = "Calendario";
+            this.Calendario.Size = new System.Drawing.Size(256, 34);
+            this.Calendario.TabIndex = 18;
+            this.Calendario.Text = "Fechas Disponibles";
+            // 
             // formdavid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -497,8 +492,6 @@ namespace Veterinario2021
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.MonthCalendar Calendario;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
@@ -521,10 +514,11 @@ namespace Veterinario2021
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.TextBox Chip;
+        private System.Windows.Forms.TextBox Edad;
         private System.Windows.Forms.TextBox ProblemaMascota;
-        private System.Windows.Forms.TextBox Telefono;
-        private System.Windows.Forms.TextBox DNI;
+        private System.Windows.Forms.TextBox Sexo;
+        private System.Windows.Forms.TextBox Especie;
+        private System.Windows.Forms.ComboBox Calendario;
     }
 }
 

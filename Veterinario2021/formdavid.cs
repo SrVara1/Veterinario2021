@@ -69,7 +69,7 @@ namespace Veterinario2021
         private void button1_Click(object sender, EventArgs e)
         {
             Conexion miConexion = new Conexion();
-            Boolean resultado = miConexion.insertaCita(DNI.Text, Telefono.Text, Chip.Text, ProblemaMascota.Text, Calendario.Text);
+            Boolean resultado = miConexion.insertaCita(Especie.Text, Sexo.Text, Edad.Text, ProblemaMascota.Text, Calendario.Text);
             if (resultado)
             {
                 MessageBox.Show("Insertado Corecctamente");
@@ -78,6 +78,11 @@ namespace Veterinario2021
             {
                 MessageBox.Show("Ha ocurrido un error inesperado, vuelve a intentarlo mas tarde");
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Calendario.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
     }
 }
