@@ -108,12 +108,13 @@ namespace Veterinario2021
             }
 
         }
-        public Boolean insertaCita(string _Especie, string _Sexo, string _Edad, string _ProblemaMascota, string _Calendario)
+        public Boolean insertaCita(string _Chip,string _Especie, string _Sexo, string _Edad, string _ProblemaMascota, string _Calendario)
         {
             try
             {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("INSERT INTO citas (Especie,Sexo,Edad,ProblemaMascota,Calendario)  VALUES (@_Especie,@_Sexo,@_Edad,@_ProblemaMascota,@Calendario)", conexion);
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO citas (Chip,Especie,Sexo,Edad,ProblemaMascota,Calendario)  VALUES (@_Chip,@_Especie,@_Sexo,@_Edad,@_ProblemaMascota,@Calendario)", conexion);
+                consulta.Parameters.AddWithValue("@_Chip", _Chip);
                 consulta.Parameters.AddWithValue("@_Especie", _Especie);
                 consulta.Parameters.AddWithValue("@_Sexo", _Sexo);
                 consulta.Parameters.AddWithValue("@_Edad", _Edad);
