@@ -145,7 +145,7 @@ namespace Veterinario2021
             try
             {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM t_veterinarios2021 WHERE DNI='" + _DNI + "'", conexion);
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM usuarios WHERE DNI='" + _DNI + "'", conexion);
                 MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
                 DataTable usuariosVeterinario = new DataTable(); //formato que espera el datagridview
                 usuariosVeterinario.Load(resultado);  //convierte MysqlDataReader en DataTable
@@ -163,7 +163,7 @@ namespace Veterinario2021
             try
             {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM t_veterinarios2021 WHERE Chip='" + _Chip+ "'", conexion);
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM mascotas WHERE Chip='" + _Chip+ "'", conexion);
                 MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
                 DataTable usuariosVeterinario = new DataTable(); //formato que espera el datagridview
                 usuariosVeterinario.Load(resultado);  //convierte MysqlDataReader en DataTable
