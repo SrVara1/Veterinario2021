@@ -42,28 +42,34 @@ namespace Veterinario2021
             // 
             // Usuario
             // 
+            this.Usuario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Usuario.Location = new System.Drawing.Point(273, 225);
             this.Usuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Usuario.Multiline = true;
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(230, 39);
             this.Usuario.TabIndex = 2;
+            this.Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Usuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // password
             // 
+            this.password.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.password.Location = new System.Drawing.Point(273, 289);
             this.password.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.password.Multiline = true;
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(230, 37);
+            this.password.PasswordChar = '*';
+            this.password.Size = new System.Drawing.Size(230, 39);
             this.password.TabIndex = 3;
+            this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // CreaUsuario
             // 
             this.CreaUsuario.BackColor = System.Drawing.Color.White;
             this.CreaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CreaUsuario.Location = new System.Drawing.Point(354, 399);
+            this.CreaUsuario.Location = new System.Drawing.Point(338, 399);
             this.CreaUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CreaUsuario.Name = "CreaUsuario";
             this.CreaUsuario.Size = new System.Drawing.Size(104, 32);
@@ -88,7 +94,7 @@ namespace Veterinario2021
             this.IniciaSesion.BackColor = System.Drawing.Color.DodgerBlue;
             this.IniciaSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IniciaSesion.ForeColor = System.Drawing.Color.White;
-            this.IniciaSesion.Location = new System.Drawing.Point(163, 349);
+            this.IniciaSesion.Location = new System.Drawing.Point(144, 349);
             this.IniciaSesion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IniciaSesion.Name = "IniciaSesion";
             this.IniciaSesion.Size = new System.Drawing.Size(340, 44);
@@ -101,7 +107,7 @@ namespace Veterinario2021
             // 
             this.texto.BackColor = System.Drawing.Color.White;
             this.texto.ForeColor = System.Drawing.Color.Blue;
-            this.texto.Location = new System.Drawing.Point(197, 399);
+            this.texto.Location = new System.Drawing.Point(173, 396);
             this.texto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.texto.Name = "texto";
             this.texto.Size = new System.Drawing.Size(139, 32);
@@ -112,7 +118,7 @@ namespace Veterinario2021
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(128, 225);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 39);
@@ -123,7 +129,7 @@ namespace Veterinario2021
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(128, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 39);

@@ -17,6 +17,9 @@ namespace Veterinario2021
         public FormJaime()
         {
             InitializeComponent();
+            char c = '\u1F43';
+
+            password.PasswordChar = '\u2664';
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -53,6 +56,11 @@ namespace Veterinario2021
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }
