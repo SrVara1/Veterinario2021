@@ -140,6 +140,42 @@ namespace Veterinario2021
             }
 
         }
+        public DataTable getUsuarios (String _DNI)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM t_veterinarios2021 WHERE DNI='" + _DNI + "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
+                DataTable usuariosVeterinario = new DataTable(); //formato que espera el datagridview
+                usuariosVeterinario.Load(resultado);  //convierte MysqlDataReader en DataTable
+                conexion.Close();
+                return usuariosVeterinario;
+            }
+            catch (MySqlException e)
+            {
+                conexion.Close();
+                throw e;
+            }
+        }
+        public DataTable getMascotas(String _Chip)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM t_veterinarios2021 WHERE Chip='" + _Chip+ "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la query
+                DataTable usuariosVeterinario = new DataTable(); //formato que espera el datagridview
+                usuariosVeterinario.Load(resultado);  //convierte MysqlDataReader en DataTable
+                conexion.Close();
+                return usuariosVeterinario;
+            }
+            catch (MySqlException e)
+            {
+                conexion.Close();
+                throw e;
+            }
+        }
 
 
     }
