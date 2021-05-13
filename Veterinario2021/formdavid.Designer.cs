@@ -64,6 +64,9 @@ namespace Veterinario2021
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.getChip = new System.Windows.Forms.TextBox();
             this.getDNI = new System.Windows.Forms.TextBox();
             this.getMascotas = new System.Windows.Forms.Button();
@@ -482,6 +485,11 @@ namespace Veterinario2021
             // 
             // tabPage2
             // 
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.getChip);
             this.tabPage2.Controls.Add(this.getDNI);
             this.tabPage2.Controls.Add(this.getMascotas);
@@ -497,23 +505,57 @@ namespace Veterinario2021
             this.tabPage2.Text = "BUSCADOR";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(64, 19);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(1108, 145);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "Encuentra tus datos";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.White;
+            this.label18.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(669, 407);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(503, 74);
+            this.label18.TabIndex = 8;
+            this.label18.Text = "Buscador de Mascotas";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(64, 407);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(503, 74);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Buscador de Usuarios";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // getChip
             // 
-            this.getChip.Location = new System.Drawing.Point(793, 177);
+            this.getChip.Location = new System.Drawing.Point(842, 504);
             this.getChip.Name = "getChip";
             this.getChip.Size = new System.Drawing.Size(150, 31);
             this.getChip.TabIndex = 6;
             // 
             // getDNI
             // 
-            this.getDNI.Location = new System.Drawing.Point(222, 177);
+            this.getDNI.Location = new System.Drawing.Point(219, 504);
             this.getDNI.Name = "getDNI";
-            this.getDNI.Size = new System.Drawing.Size(150, 31);
+            this.getDNI.Size = new System.Drawing.Size(167, 31);
             this.getDNI.TabIndex = 5;
             // 
             // getMascotas
             // 
-            this.getMascotas.Location = new System.Drawing.Point(845, 273);
+            this.getMascotas.Location = new System.Drawing.Point(858, 566);
             this.getMascotas.Name = "getMascotas";
             this.getMascotas.Size = new System.Drawing.Size(112, 34);
             this.getMascotas.TabIndex = 4;
@@ -523,7 +565,7 @@ namespace Veterinario2021
             // 
             // getUsuarios
             // 
-            this.getUsuarios.Location = new System.Drawing.Point(143, 262);
+            this.getUsuarios.Location = new System.Drawing.Point(245, 566);
             this.getUsuarios.Name = "getUsuarios";
             this.getUsuarios.Size = new System.Drawing.Size(112, 34);
             this.getUsuarios.TabIndex = 2;
@@ -533,23 +575,25 @@ namespace Veterinario2021
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(659, 380);
+            this.dataGridView2.Location = new System.Drawing.Point(669, 641);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 33;
-            this.dataGridView2.Size = new System.Drawing.Size(503, 138);
+            this.dataGridView2.Size = new System.Drawing.Size(503, 98);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 380);
+            this.dataGridView1.Location = new System.Drawing.Point(64, 641);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(503, 138);
+            this.dataGridView1.Size = new System.Drawing.Size(503, 98);
             this.dataGridView1.TabIndex = 0;
             // 
             // imageList1
@@ -629,6 +673,9 @@ namespace Veterinario2021
         private System.Windows.Forms.Button getUsuarios;
         private System.Windows.Forms.TextBox getDNI;
         private System.Windows.Forms.TextBox getChip;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label4;
     }
 }
 

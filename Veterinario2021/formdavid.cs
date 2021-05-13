@@ -103,7 +103,7 @@ namespace Veterinario2021
         private void getMascotas_Click(object sender, EventArgs e)
         {
             datosMascotas = miConexion.getMascotas(getChip.Text);
-            dataGridView1.DataSource = datosMascotas;
+            dataGridView2.DataSource = datosMascotas;
 
         }
     }
