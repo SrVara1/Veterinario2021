@@ -13,6 +13,10 @@ namespace Veterinario2021
     public partial class formdavid : Form
     {
         Conexion miConexion = new Conexion();
+        DataTable datosUsuarios = new DataTable();
+        DataTable datosMascotas = new DataTable();
+
+       
         public formdavid()
         {
             InitializeComponent();
@@ -68,21 +72,39 @@ namespace Veterinario2021
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Conexion miConexion = new Conexion();
-            Boolean resultado = miConexion.insertaCita(Especie.Text, Sexo.Text, Edad.Text, ProblemaMascota.Text, Calendario.Text);
-            if (resultado)
-            {
-                MessageBox.Show("Insertado Corecctamente");
-            }
-            else
-            {
-                MessageBox.Show("Ha ocurrido un error inesperado, vuelve a intentarlo mas tarde");
+            if (Chip.Text.Length > 0 && Especie.Text.Length > 0 && Sexo.Text.Length > 0 && Edad.Text.Length > 0 && ProblemaMascota.Text.Length > 0 && Calendario.Text.Length > 0){
+
+
+                Conexion miConexion = new Conexion();
+                Boolean resultado = miConexion.insertaCita(Chip.Text,Especie.Text, Sexo.Text, Edad.Text, ProblemaMascota.Text, Calendario.Text);
+                if (resultado)
+                {
+                    MessageBox.Show("Insertado Correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Ha ocurrido un error inesperado, vuelve a intentarlo mas tarde");
+                }
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Calendario.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+        }
+
+        private void getUsuarios_Click(object sender, EventArgs e)
+        {
+            datosUsuarios = miConexion.getUsuarios(getDNI.Text);
+            dataGridView1.DataSource = datosUsuarios;
+
+        }
+
+        private void getMascotas_Click(object sender, EventArgs e)
+        {
+            datosMascotas = miConexion.getMascotas(getChip.Text);
+            dataGridView1.DataSource = datosMascotas;
+
         }
     }
 }

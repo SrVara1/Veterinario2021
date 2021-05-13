@@ -44,6 +44,9 @@ namespace Veterinario2021
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Chip = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Calendario = new System.Windows.Forms.ComboBox();
             this.Edad = new System.Windows.Forms.TextBox();
             this.ProblemaMascota = new System.Windows.Forms.TextBox();
             this.Sexo = new System.Windows.Forms.TextBox();
@@ -61,14 +64,22 @@ namespace Veterinario2021
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.getChip = new System.Windows.Forms.TextBox();
+            this.getDNI = new System.Windows.Forms.TextBox();
+            this.getMascotas = new System.Windows.Forms.Button();
+            this.getUsuarios = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.Calendario = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -232,6 +243,8 @@ namespace Veterinario2021
             // 
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage4.Controls.Add(this.Chip);
+            this.tabPage4.Controls.Add(this.label2);
             this.tabPage4.Controls.Add(this.Calendario);
             this.tabPage4.Controls.Add(this.Edad);
             this.tabPage4.Controls.Add(this.ProblemaMascota);
@@ -251,6 +264,46 @@ namespace Veterinario2021
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "CITAS";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // Chip
+            // 
+            this.Chip.Location = new System.Drawing.Point(858, 182);
+            this.Chip.Multiline = true;
+            this.Chip.Name = "Chip";
+            this.Chip.Size = new System.Drawing.Size(257, 34);
+            this.Chip.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(725, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 34);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Chip";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Calendario
+            // 
+            this.Calendario.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Calendario.FormattingEnabled = true;
+            this.Calendario.Items.AddRange(new object[] {
+            "28/05/2021",
+            "",
+            "09/06/2021",
+            "",
+            "14/06/2021",
+            "",
+            "21/06/2021",
+            "",
+            "27/06/2021",
+            "",
+            "05/07/2021"});
+            this.Calendario.Location = new System.Drawing.Point(858, 257);
+            this.Calendario.Name = "Calendario";
+            this.Calendario.Size = new System.Drawing.Size(256, 34);
+            this.Calendario.TabIndex = 18;
+            this.Calendario.Text = "Fechas Disponibles";
             // 
             // Edad
             // 
@@ -429,6 +482,12 @@ namespace Veterinario2021
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.getChip);
+            this.tabPage2.Controls.Add(this.getDNI);
+            this.tabPage2.Controls.Add(this.getMascotas);
+            this.tabPage2.Controls.Add(this.getUsuarios);
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
@@ -437,6 +496,61 @@ namespace Veterinario2021
             this.tabPage2.TabIndex = 5;
             this.tabPage2.Text = "BUSCADOR";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // getChip
+            // 
+            this.getChip.Location = new System.Drawing.Point(793, 177);
+            this.getChip.Name = "getChip";
+            this.getChip.Size = new System.Drawing.Size(150, 31);
+            this.getChip.TabIndex = 6;
+            // 
+            // getDNI
+            // 
+            this.getDNI.Location = new System.Drawing.Point(222, 177);
+            this.getDNI.Name = "getDNI";
+            this.getDNI.Size = new System.Drawing.Size(150, 31);
+            this.getDNI.TabIndex = 5;
+            // 
+            // getMascotas
+            // 
+            this.getMascotas.Location = new System.Drawing.Point(845, 273);
+            this.getMascotas.Name = "getMascotas";
+            this.getMascotas.Size = new System.Drawing.Size(112, 34);
+            this.getMascotas.TabIndex = 4;
+            this.getMascotas.Text = "Buscar";
+            this.getMascotas.UseVisualStyleBackColor = true;
+            this.getMascotas.Click += new System.EventHandler(this.getMascotas_Click);
+            // 
+            // getUsuarios
+            // 
+            this.getUsuarios.Location = new System.Drawing.Point(143, 262);
+            this.getUsuarios.Name = "getUsuarios";
+            this.getUsuarios.Size = new System.Drawing.Size(112, 34);
+            this.getUsuarios.TabIndex = 2;
+            this.getUsuarios.Text = "Buscar";
+            this.getUsuarios.UseVisualStyleBackColor = true;
+            this.getUsuarios.Click += new System.EventHandler(this.getUsuarios_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(659, 380);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 33;
+            this.dataGridView2.Size = new System.Drawing.Size(503, 138);
+            this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(34, 380);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(503, 138);
+            this.dataGridView1.TabIndex = 0;
             // 
             // imageList1
             // 
@@ -447,22 +561,6 @@ namespace Veterinario2021
             this.imageList1.Images.SetKeyName(1, "icons8_find_and_replace_80px.png");
             this.imageList1.Images.SetKeyName(2, "icons8_home_40px_2.png");
             this.imageList1.Images.SetKeyName(3, "icons8_who_50px.png");
-            // 
-            // Calendario
-            // 
-            this.Calendario.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Calendario.FormattingEnabled = true;
-            this.Calendario.Items.AddRange(new object[] {
-            "28/05/2021",
-            "",
-            "09/06/2021",
-            "",
-            "14/06/2021"});
-            this.Calendario.Location = new System.Drawing.Point(852, 182);
-            this.Calendario.Name = "Calendario";
-            this.Calendario.Size = new System.Drawing.Size(256, 34);
-            this.Calendario.TabIndex = 18;
-            this.Calendario.Text = "Fechas Disponibles";
             // 
             // formdavid
             // 
@@ -481,6 +579,10 @@ namespace Veterinario2021
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -519,6 +621,14 @@ namespace Veterinario2021
         private System.Windows.Forms.TextBox Sexo;
         private System.Windows.Forms.TextBox Especie;
         private System.Windows.Forms.ComboBox Calendario;
+        private System.Windows.Forms.TextBox Chip;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button getMascotas;
+        private System.Windows.Forms.Button getUsuarios;
+        private System.Windows.Forms.TextBox getDNI;
+        private System.Windows.Forms.TextBox getChip;
     }
 }
 
